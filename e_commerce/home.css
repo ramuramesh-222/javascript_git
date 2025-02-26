@@ -1,0 +1,149 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:#e6e6e6 !important;
+}
+:root{
+    --bg_color:#f2f2f2;
+    --pm:10px;
+}
+
+
+
+body{
+    font-family: "Poppins", serif;
+
+}
+.nav_color{
+    background-color: #334999 !important;
+}
+input{
+    width: 800px !important;
+    height: 40px !important;
+    background-color:#f2f2f2;
+    border: none;
+    color: white;
+}
+input::placeholder{
+    font-style: italic;
+    width: 600px;
+    font-size: large;
+}
+.nav-item a{
+     color: #f2f2f2e7 !important;
+}
+.nav-item a:hover{
+    border-bottom: 3px solid #FF9933;
+    transition: .2s;
+    color: white !important;
+}
+.navbar-nav{
+    flex-direction: row !important ;
+}
+
+/* ========================================================== */
+/* ========================products start */
+.product{
+    background-color: var(--bg_color);
+    padding: var(--pm);
+    margin: var(--pm);
+
+}
+.product_bg{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+    overflow: hidden;
+}
+.product img{
+    max-width: 5rem;
+    padding: 5px;
+}
+.product_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+}
+.product_list h1{
+    padding: 10px 10px 0px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.product_list:hover img{
+    transform: scale(1.1);
+    transition: .2s;
+    z-index: 99;
+}
+
+/* ========================products end */
+
+/* ========================================================== */
+/* ========================offers */
+.offer{
+    background-color: var(--bg_color);
+    padding: var(--pm);
+    margin: var(--pm);
+}
+.offer img{
+    width: 100% ;
+    border-radius: 10px;
+}
+/* ========================================================== */
+/* ========================mobile_varient */
+
+.mobile_varient{
+    background-color: var(--bg_color);
+   padding: var(--pm);
+   margin: var(--pm); 
+}
+.mobile_varient h3{
+    border-left: 10px solid #334999;
+    background-color: #3349996c;
+    padding: 5px 20px 5px 5px ;
+    display: inline-block;
+    border-radius: 10px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+    input{
+        width: 500px !important;
+    }
+    
+}
+
+
+@media screen and (max-width:850px){
+    input{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:930px){
+    .product_bg{
+        width: 100%;
+        overflow-x: scroll;
+        justify-content: start;
+        scrollbar-width: none;
+    }
+    
+}
